@@ -6,6 +6,12 @@ terraform {
       version = "~> 3.0.2"
     }
   }
+cloud {
+  organization = "Bunmi_terraform_journey"
+  workspaces {
+    name = "learn-terraform-azure"
+  }
+}
 
   required_version = ">= 1.1.0"
 }
